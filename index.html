@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="mainBg d-flex justify-content-center">
+    <div id="mainContainer" class="d-flex flex-column justify-content-around">
+        <div class="text-center">
+            <img id="rocket" class="mb-4" src="./images/rocketLogo.png" width="80px" alt="">
+            <h1 id="title" class="text-white">WE'RE LAUNCHING SOON</h1>
+            <div id="setTimerBtn" class="btn">SET TIMER</div>
+            <div id="startBtn" class="btn d-none">START</div>
+        </div>
+
+
+
+        <div id="timerContainer" class="d-flex flex-row justify-content-between">
+
+            <div id="days" class="d-flex flex-column text-center">
+                <h2 id="daysDisplay" class="number">08</h1>
+                <input id="daysInput" class="number d-none" type="number">
+                <span>DAYS</span>
+            </div>
+            <div id="hours" class=" d-flex flex-column text-center">
+                <h2 id="hoursDisplay" class="number">23</h1>
+                <input id="hoursInput" class="number d-none" type="number">
+                <span>HOURS</span>
+            </div>
+            <div id="minutes" class=" d-flex flex-column text-center">
+                <h2 id="minutesDisplay" class="number">55</h1>
+                <input id="minutesInput" class="number d-none" type="number">
+                <span>MINUTES</span>
+            </div>
+            <div id="seconds" class=" d-flex flex-column text-center">
+                <h2 id="secondsDisplay" class="number">08</h1>
+                <input id="secondsInput" class="number d-none" type="number">
+                <span>SECONDS</span>
+            </div>
+
+        </div>
+
+        <div id="socialMediaContainer" class="d-flex flex-row justify-content-center">
+            <a href="https://pt-br.facebook.com/"><div id="facebook" class="socialMediaIcons m-2"><img src="./images/icon-facebook.svg"></div></a>
+            <a href="https://br.pinterest.com/"><div id="pinterest" class="socialMediaIcons m-2"><img src="./images/icon-pinterest.svg"></div></a>
+            <a href="https://www.instagram.com/"><div id="instagram" class="socialMediaIcons m-2"><img src="./images/icon-instagram.svg"></div></a>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

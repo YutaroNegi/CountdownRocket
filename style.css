@@ -1,0 +1,82 @@
+/* 
+### Primary
+
+- Grayish blue: hsl(237, 18%, 59%)
+- Soft red: hsl(345, 95%, 68%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Dark desaturated blue: hsl(236, 21%, 26%)
+- Very dark blue: hsl(235, 16%, 14%)
+- Very dark (mostly black) blue: hsl(234, 17%, 12%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 700;
+}
+
+html, body {
+    height: 100%;
+}
+
+.mainBg {
+    background-image: url(./images/bg-stars.svg);
+    background-color: hsl(235, 16%, 14%);
+}
+
+#timerContainer {
+    color: hsl(345, 95%, 68%);
+}
+
+#rocket{
+    filter: invert(54%) sepia(50%) saturate(962%) hue-rotate(304deg) brightness(100%) contrast(89%);
+}
+
+img:hover {
+    cursor: pointer;
+    filter: invert(54%) sepia(50%) saturate(962%) hue-rotate(304deg) brightness(100%) contrast(89%);
+}
+
+.number {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: hsl(236, 21%, 26%);
+}
+
+span {
+    font-weight: 100;
+    color: hsl(237, 18%, 59%);
+}
+
+.btn {
+    color: hsl(237, 18%, 59%);
+}
+
+.btn:hover {
+    color: hsl(345, 95%, 68%);
+}
+
+input[type='number'] {
+    font-size: 32px;
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    border: none;
+    height: 80px;
+    width: 80px;
+    margin: 8px;
+    padding: 20px;
+}
+
+h2{
+    height: 80px;
+    width: 80px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
